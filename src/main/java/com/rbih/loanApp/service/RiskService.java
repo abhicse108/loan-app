@@ -1,6 +1,6 @@
-package service;
+package com.rbih.loanApp.service;
 
-import domain.enums.RiskBand;
+import com.rbih.loanApp.domain.enums.RiskBand;
 import org.springframework.stereotype.Service;
 
 @Service

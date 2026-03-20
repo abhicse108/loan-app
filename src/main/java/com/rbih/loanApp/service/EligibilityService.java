@@ -1,8 +1,8 @@
-package service;
+package com.rbih.loanApp.service;
 
-import domain.dto.ApplicantDTO;
-import domain.dto.LoanDTO;
-import domain.enums.RejectionReason;
+import com.rbih.loanApp.domain.dto.ApplicantDTO;
+import com.rbih.loanApp.domain.dto.LoanDTO;
+import com.rbih.loanApp.domain.enums.RejectionReason;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package domain.enums;
+package com.rbih.loanApp.domain.enums;
 
 public enum RejectionReason {
     LOW_CREDIT_SCORE,

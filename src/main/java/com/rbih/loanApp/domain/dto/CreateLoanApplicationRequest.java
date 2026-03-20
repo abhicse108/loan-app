@@ -1,4 +1,4 @@
-package domain.dto;
+package com.rbih.loanApp.domain.dto;
 
 import jakarta.validation.Valid;
 import lombok.Data;

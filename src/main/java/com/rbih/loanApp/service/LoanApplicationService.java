@@ -1,13 +1,14 @@
-package service;
+package com.rbih.loanApp.service;
 
-import domain.dto.CreateLoanApplicationRequest;
-import domain.dto.LoanApplicationResponse;
-import domain.enums.ApplicationStatus;
-import domain.enums.RejectionReason;
-import domain.enums.RiskBand;
+import com.rbih.loanApp.domain.dto.CreateLoanApplicationRequest;
+import com.rbih.loanApp.domain.dto.LoanApplicationResponse;
+import com.rbih.loanApp.domain.enums.ApplicationStatus;
+import com.rbih.loanApp.domain.enums.RejectionReason;
+import com.rbih.loanApp.domain.enums.RiskBand;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import util.EmiCalculator;
+import com.rbih.loanApp.util.EmiCalculator;
+import com.rbih.loanApp.domain.dto.OfferDTO;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -22,12 +23,12 @@ public class LoanApplicationService {
     private final EmiCalculator emiCalculator;
     private final EligibilityService eligibilityService;
 
-    public LoanApplicationService(RiskService riskService, InterestService interestService, EmiCalculator emiCalculator, EligibilityService eligibilityService) {
-        this.riskService = riskService;
-        this.interestService = interestService;
-        this.emiCalculator = emiCalculator;
-        this.eligibilityService = eligibilityService;
-    }
+//    public LoanApplicationService(RiskService riskService, InterestService interestService, EmiCalculator emiCalculator, EligibilityService eligibilityService) {
+//        this.riskService = riskService;
+//        this.interestService = interestService;
+//        this.emiCalculator = emiCalculator;
+//        this.eligibilityService = eligibilityService;
+//    }
 
     public LoanApplicationResponse processApplication(CreateLoanApplicationRequest request) {
 

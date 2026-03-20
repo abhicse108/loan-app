@@ -1,4 +1,4 @@
-package util;
+package com.rbih.loanApp.util;
 
 import org.springframework.stereotype.Component;
 

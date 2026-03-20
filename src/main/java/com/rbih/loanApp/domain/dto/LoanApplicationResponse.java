@@ -1,8 +1,8 @@
-package domain.dto;
+package com.rbih.loanApp.domain.dto;
 
-import domain.enums.ApplicationStatus;
-import domain.enums.RejectionReason;
-import domain.enums.RiskBand;
+import com.rbih.loanApp.domain.enums.ApplicationStatus;
+import com.rbih.loanApp.domain.enums.RejectionReason;
+import com.rbih.loanApp.domain.enums.RiskBand;
 import lombok.Builder;
 import lombok.Data;
 

@@ -1,6 +1,6 @@
-package domain.dto;
+package com.rbih.loanApp.domain.dto;
 
-import domain.enums.EmploymentType;
+import com.rbih.loanApp.domain.enums.EmploymentType;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 

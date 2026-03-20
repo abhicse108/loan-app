@@ -1,7 +1,7 @@
-package service;
+package com.rbih.loanApp.service;
 
-import domain.enums.EmploymentType;
-import domain.enums.RiskBand;
+import com.rbih.loanApp.domain.enums.EmploymentType;
+import com.rbih.loanApp.domain.enums.RiskBand;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
