@@ -22,4 +22,14 @@ public class GlobalExceptionHandler {
 
         return ResponseEntity.badRequest().body(errors);
     }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<Map<String, String>> handleInvalidEnum(HttpMessageNotReadableException ex) {
+
+        Map<String, String> error = new HashMap<>();
+
+        error.put("message", "Invalid value provided for one of the fields. Please check the values.");
+
+        return ResponseEntity.badRequest().body(error);
+    }
 }
